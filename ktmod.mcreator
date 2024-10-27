@@ -256,12 +256,73 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "soldering_station"
+    },
+    {
+      "name": "SolderingStationGUI",
+      "type": "gui",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_station_gui"
+    },
+    {
+      "name": "CopperWire",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_wire"
+    },
+    {
+      "name": "CopperWireCraft",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_wire_craft"
+    },
+    {
+      "name": "RegularChip",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regular_chip"
+    },
+    {
+      "name": "SolderingStationProcedure",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_station_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.ktmod.copper_wire": "Copper Wire",
       "block.ktmod.tank": "Tank",
       "block.ktmod.soldering_station": "Soldering Station",
       "fluid.ktmod.fuel": "Fuel",
@@ -275,6 +336,7 @@
       "block.ktmod.fuel": "Fuel",
       "block.ktmod.bedrock_miner": "Bedrock Miner",
       "item.ktmod.crystal": "Crystal",
+      "item.ktmod.regular_chip": "Regular Chip",
       "itemGroup.tabtab": "KTMod",
       "block.ktmod.nether_oil_ore": "Oil Ore"
     }
