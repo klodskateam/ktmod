@@ -316,6 +316,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "UranOre",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uran_ore"
+    },
+    {
+      "name": "Radiation",
+      "type": "particle",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiation"
     }
   ],
   "variable_elements": [],
@@ -337,6 +353,7 @@
       "block.ktmod.bedrock_miner": "Bedrock Miner",
       "item.ktmod.crystal": "Crystal",
       "item.ktmod.regular_chip": "Basic Chip",
+      "block.ktmod.uran_ore": "Uran Ore",
       "itemGroup.tabtab": "KTMod",
       "block.ktmod.nether_oil_ore": "Oil Ore"
     }
