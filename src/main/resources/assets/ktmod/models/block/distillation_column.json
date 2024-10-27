@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ktmod:blocks/distillationcolumn",
+    "up": "ktmod:blocks/distillationcolumn",
+    "north": "ktmod:blocks/distillationcolumn",
+    "east": "ktmod:blocks/distillationcolumn",
+    "south": "ktmod:blocks/distillationcolumn",
+    "west": "ktmod:blocks/distillationcolumn",
+    "particle": "ktmod:blocks/distillationcolumn"
+  }
+}

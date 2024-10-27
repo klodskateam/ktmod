@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ktmod:blocks/tank",
+    "up": "ktmod:blocks/tank",
+    "north": "ktmod:blocks/tank",
+    "east": "ktmod:blocks/tank",
+    "south": "ktmod:blocks/tank",
+    "west": "ktmod:blocks/tank",
+    "particle": "ktmod:blocks/tank"
+  }
+}

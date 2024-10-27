@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ktmod:oil_ore",
+    "ktmod:nether_oil_ore",
+    "ktmod:distillation_column",
+    "ktmod:bedrock_miner",
+    "ktmod:processed_bedrock"
+  ]
+}

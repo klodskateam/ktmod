@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ktmod:blocks/oil_block",
+    "up": "ktmod:blocks/oil_block",
+    "north": "ktmod:blocks/oil_block",
+    "east": "ktmod:blocks/oil_block",
+    "south": "ktmod:blocks/oil_block",
+    "west": "ktmod:blocks/oil_block",
+    "particle": "ktmod:blocks/oil_block"
+  }
+}

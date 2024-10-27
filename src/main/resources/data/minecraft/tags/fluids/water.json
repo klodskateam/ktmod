@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "ktmod:fuel",
+    "ktmod:flowing_fuel"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 33,
+  "_type": "tab",
+  "definition": {
+    "name": "KTMod",
+    "icon": {
+      "value": "CUSTOM:OilOre"
+    },
+    "showSearch": true
+  }
+}

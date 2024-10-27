@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ktmod:blocks/bedrock_miner",
+    "up": "ktmod:blocks/bedrock_miner",
+    "north": "ktmod:blocks/bedrock_miner",
+    "east": "ktmod:blocks/bedrock_miner",
+    "south": "ktmod:blocks/bedrock_miner",
+    "west": "ktmod:blocks/bedrock_miner",
+    "particle": "ktmod:blocks/bedrock_miner"
+  }
+}

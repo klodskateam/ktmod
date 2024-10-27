@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ktmod:blocks/nether_oil_ore",
+    "up": "ktmod:blocks/nether_oil_ore",
+    "north": "ktmod:blocks/nether_oil_ore",
+    "east": "ktmod:blocks/nether_oil_ore",
+    "south": "ktmod:blocks/nether_oil_ore",
+    "west": "ktmod:blocks/nether_oil_ore",
+    "particle": "ktmod:blocks/nether_oil_ore"
+  }
+}

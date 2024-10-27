@@ -1,0 +1,300 @@
+{
+  "mod_elements": [
+    {
+      "name": "Tab",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tab"
+    },
+    {
+      "name": "OilOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil_ore",
+      "path": "~/Oil Ores"
+    },
+    {
+      "name": "NetherOilOre",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_oil_ore",
+      "path": "~/Oil Ores"
+    },
+    {
+      "name": "DistillationColumn",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillation_column"
+    },
+    {
+      "name": "DistillationColumnGUI",
+      "type": "gui",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillation_column_gui"
+    },
+    {
+      "name": "DistillationColumnObnovitTakt",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillation_column_obnovit_takt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Plastic",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plastic"
+    },
+    {
+      "name": "Fuel",
+      "type": "fluid",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuel",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "DistillationColumnCraft",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distillation_column_craft"
+    },
+    {
+      "name": "InternalCombustionEngine",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "internal_combustion_engine"
+    },
+    {
+      "name": "Bearing",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bearing"
+    },
+    {
+      "name": "BearingCraft",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bearing_craft"
+    },
+    {
+      "name": "InternalCombustionEngineCraft",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "internal_combustion_engine_craft"
+    },
+    {
+      "name": "BedrockMiner",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_miner"
+    },
+    {
+      "name": "BedrockMinerCraft",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_miner_craft"
+    },
+    {
+      "name": "Tank",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank"
+    },
+    {
+      "name": "TankCraft",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_craft"
+    },
+    {
+      "name": "TankGUI",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_gui"
+    },
+    {
+      "name": "TankObnovitTakt",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_obnovit_takt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BedrockMinerGui",
+      "type": "gui",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_miner_gui"
+    },
+    {
+      "name": "Crystal",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal"
+    },
+    {
+      "name": "BedrockMinerObnovitTakt",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_miner_obnovit_takt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProcessedBedrock",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "processed_bedrock"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.ktmod.tank": "Tank",
+      "fluid.ktmod.fuel": "Fuel",
+      "item.ktmod.internal_combustion_engine": "Internal Combustion Engine",
+      "item.ktmod.fuel_bucket": "Fuel Bucket",
+      "item.ktmod.bearing": "Bearing",
+      "block.ktmod.processed_bedrock": "Processed Bedrock",
+      "item.ktmod.plastic": "Plastic",
+      "block.ktmod.oil_ore": "Oil Ore",
+      "block.ktmod.distillation_column": "Distillation Column",
+      "block.ktmod.fuel": "Fuel",
+      "block.ktmod.bedrock_miner": "Bedrock Miner",
+      "item.ktmod.crystal": "Crystal",
+      "itemGroup.tabtab": "KTMod",
+      "block.ktmod.nether_oil_ore": "Oil Ore"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Oil Ores",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ktmod",
+    "modName": "KTMod",
+    "version": "1.0.0",
+    "author": "koval, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "com.klodskateam.ktmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}
