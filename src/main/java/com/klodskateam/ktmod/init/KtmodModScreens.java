@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import com.klodskateam.ktmod.client.gui.TankGUIScreen;
+import com.klodskateam.ktmod.client.gui.SolderingStationGUIScreen;
 import com.klodskateam.ktmod.client.gui.DistillationColumnGUIScreen;
 import com.klodskateam.ktmod.client.gui.BedrockMinerGuiScreen;
 
@@ -23,6 +24,7 @@ public class KtmodModScreens {
 			MenuScreens.register(KtmodModMenus.DISTILLATION_COLUMN_GUI, DistillationColumnGUIScreen::new);
 			MenuScreens.register(KtmodModMenus.TANK_GUI, TankGUIScreen::new);
 			MenuScreens.register(KtmodModMenus.BEDROCK_MINER_GUI, BedrockMinerGuiScreen::new);
+			MenuScreens.register(KtmodModMenus.SOLDERING_STATION_GUI, SolderingStationGUIScreen::new);
 		});
 	}
 }
