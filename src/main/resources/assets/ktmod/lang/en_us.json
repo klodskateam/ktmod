@@ -1,4 +1,5 @@
 {
+  "item.ktmod.copper_wire": "Copper Wire",
   "block.ktmod.tank": "Tank",
   "block.ktmod.soldering_station": "Soldering Station",
   "fluid.ktmod.fuel": "Fuel",
@@ -12,6 +13,7 @@
   "block.ktmod.fuel": "Fuel",
   "block.ktmod.bedrock_miner": "Bedrock Miner",
   "item.ktmod.crystal": "Crystal",
+  "item.ktmod.regular_chip": "Regular Chip",
   "itemGroup.tabtab": "KTMod",
   "block.ktmod.nether_oil_ore": "Oil Ore"
 }
