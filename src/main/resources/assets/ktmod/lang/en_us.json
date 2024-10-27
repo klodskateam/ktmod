@@ -10,11 +10,12 @@
   "item.ktmod.plastic": "Plastic",
   "block.ktmod.oil_ore": "Oil Ore",
   "block.ktmod.distillation_column": "Distillation Column",
+  "item.ktmod.battery": "Battery",
   "block.ktmod.fuel": "Fuel",
   "block.ktmod.bedrock_miner": "Bedrock Miner",
   "item.ktmod.electric_pickaxe": "Electric Pickaxe",
   "item.ktmod.crystal": "Crystal",
-  "item.ktmod.regular_chip": "Basic Microchip",
+  "item.ktmod.regular_chip": "Regular Chip",
   "block.ktmod.uran_ore": "Uranium Ore",
   "itemGroup.tabtab": "KTMod",
   "block.ktmod.nether_oil_ore": "Oil Ore"

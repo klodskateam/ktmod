@@ -69,9 +69,7 @@ public class ElectricPickaxeItem extends PickaxeItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ElectricPickaxeMenuProcedure.execute(
-
-		);
+		ElectricPickaxeMenuProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}
 

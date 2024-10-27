@@ -365,8 +365,53 @@
       "locked_code": false,
       "registry_name": "electric_pickaxe_menu",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
+    },
+    {
+      "name": "ElectricPickaxeCraft",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pickaxe_craft"
+    },
+    {
+      "name": "Battery",
+      "type": "item",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery"
+    },
+    {
+      "name": "ElectricPickaxeGUI",
+      "type": "gui",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pickaxe_gui"
     }
   ],
   "variable_elements": [],
@@ -384,6 +429,7 @@
       "item.ktmod.plastic": "Пластик",
       "block.ktmod.oil_ore": "Нефтяная руда",
       "block.ktmod.distillation_column": "Distillation Column",
+      "item.ktmod.battery": "Battery",
       "block.ktmod.fuel": "Топливо",
       "block.ktmod.bedrock_miner": "Обработчик бедрока",
       "item.ktmod.electric_pickaxe": "Electric Pickaxe",
@@ -405,11 +451,12 @@
       "item.ktmod.plastic": "Plastic",
       "block.ktmod.oil_ore": "Oil Ore",
       "block.ktmod.distillation_column": "Distillation Column",
+      "item.ktmod.battery": "Battery",
       "block.ktmod.fuel": "Fuel",
       "block.ktmod.bedrock_miner": "Bedrock Miner",
       "item.ktmod.electric_pickaxe": "Electric Pickaxe",
       "item.ktmod.crystal": "Crystal",
-      "item.ktmod.regular_chip": "Basic Microchip",
+      "item.ktmod.regular_chip": "Regular Chip",
       "block.ktmod.uran_ore": "Uranium Ore",
       "itemGroup.tabtab": "KTMod",
       "block.ktmod.nether_oil_ore": "Oil Ore"

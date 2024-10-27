@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "regular_chip",
+    "texture": "battery_texture",
     "customModelName": "Normal",
-    "name": "Regular Chip",
-    "rarity": "COMMON",
+    "name": "Battery",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Tab"
     },
@@ -24,7 +24,10 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "Basic alkaline battery",
+      "can power your TV remote."
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
