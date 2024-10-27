@@ -337,6 +337,26 @@
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
+    "ru_ru": {
+      "item.ktmod.copper_wire": "Медный провод",
+      "block.ktmod.tank": "Бак",
+      "block.ktmod.soldering_station": "Паяльная станция",
+      "fluid.ktmod.fuel": "Топливо",
+      "item.ktmod.internal_combustion_engine": "Двигатель внутреннего сгорания",
+      "item.ktmod.fuel_bucket": "Ведро с топливом",
+      "item.ktmod.bearing": "Bearing",
+      "block.ktmod.processed_bedrock": "Обработанный бедрок",
+      "item.ktmod.plastic": "Пластик",
+      "block.ktmod.oil_ore": "Нефтяная руда",
+      "block.ktmod.distillation_column": "Distillation Column",
+      "block.ktmod.fuel": "Топливо",
+      "block.ktmod.bedrock_miner": "Обработчик бедрока",
+      "item.ktmod.crystal": "Кристалл",
+      "item.ktmod.regular_chip": "Базовый микрочип",
+      "block.ktmod.uran_ore": "Урановая руда",
+      "itemGroup.tabtab": "KTMod",
+      "block.ktmod.nether_oil_ore": "Нефтяная руда"
+    },
     "en_us": {
       "item.ktmod.copper_wire": "Copper Wire",
       "block.ktmod.tank": "Tank",
