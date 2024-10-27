@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.ArrayList;
 
 import com.klodskateam.ktmod.world.inventory.TankGUIMenu;
-import com.klodskateam.ktmod.world.inventory.SolderingStationGUIMenu;
 import com.klodskateam.ktmod.world.inventory.DistillationColumnGUIMenu;
 import com.klodskateam.ktmod.world.inventory.BedrockMinerGuiMenu;
 
@@ -28,8 +27,6 @@ public class KtmodModMenus {
 	public static final MenuType<TankGUIMenu> TANK_GUI = register("tank_gui", (id, inv, extraData) -> new TankGUIMenu(id, inv, extraData));
 	public static final MenuType<BedrockMinerGuiMenu> BEDROCK_MINER_GUI = register("bedrock_miner_gui",
 			(id, inv, extraData) -> new BedrockMinerGuiMenu(id, inv, extraData));
-	public static final MenuType<SolderingStationGUIMenu> SOLDERING_STATION_GUI = register("soldering_station_gui",
-			(id, inv, extraData) -> new SolderingStationGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);
