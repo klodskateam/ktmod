@@ -17,6 +17,7 @@ import com.klodskateam.ktmod.item.RegularChipItem;
 import com.klodskateam.ktmod.item.PlasticItem;
 import com.klodskateam.ktmod.item.InternalCombustionEngineItem;
 import com.klodskateam.ktmod.item.FuelItem;
+import com.klodskateam.ktmod.item.ElectricPickaxeItem;
 import com.klodskateam.ktmod.item.CrystalItem;
 import com.klodskateam.ktmod.item.CopperWireItem;
 import com.klodskateam.ktmod.item.BearingItem;
@@ -40,6 +41,7 @@ public class KtmodModItems {
 	public static final RegistryObject<Item> COPPER_WIRE = REGISTRY.register("copper_wire", () -> new CopperWireItem());
 	public static final RegistryObject<Item> REGULAR_CHIP = REGISTRY.register("regular_chip", () -> new RegularChipItem());
 	public static final RegistryObject<Item> URAN_ORE = block(KtmodModBlocks.URAN_ORE, KtmodModTabs.TAB_TAB);
+	public static final RegistryObject<Item> ELECTRIC_PICKAXE = REGISTRY.register("electric_pickaxe", () -> new ElectricPickaxeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

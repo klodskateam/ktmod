@@ -332,6 +332,41 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "radiation"
+    },
+    {
+      "name": "ElectricPickaxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pickaxe_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElectricPickaxe",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pickaxe"
+    },
+    {
+      "name": "ElectricPickaxeMenu",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pickaxe_menu",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -351,6 +386,7 @@
       "block.ktmod.distillation_column": "Distillation Column",
       "block.ktmod.fuel": "Топливо",
       "block.ktmod.bedrock_miner": "Обработчик бедрока",
+      "item.ktmod.electric_pickaxe": "Electric Pickaxe",
       "item.ktmod.crystal": "Кристалл",
       "item.ktmod.regular_chip": "Базовый микрочип",
       "block.ktmod.uran_ore": "Урановая руда",
@@ -371,6 +407,7 @@
       "block.ktmod.distillation_column": "Distillation Column",
       "block.ktmod.fuel": "Fuel",
       "block.ktmod.bedrock_miner": "Bedrock Miner",
+      "item.ktmod.electric_pickaxe": "Electric Pickaxe",
       "item.ktmod.crystal": "Crystal",
       "item.ktmod.regular_chip": "Basic Microchip",
       "block.ktmod.uran_ore": "Uranium Ore",
