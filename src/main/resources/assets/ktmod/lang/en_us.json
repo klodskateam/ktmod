@@ -1,5 +1,6 @@
 {
   "block.ktmod.tank": "Tank",
+  "block.ktmod.soldering_station": "Soldering Station",
   "fluid.ktmod.fuel": "Fuel",
   "item.ktmod.internal_combustion_engine": "Internal Combustion Engine",
   "item.ktmod.fuel_bucket": "Fuel Bucket",

@@ -248,6 +248,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "processed_bedrock"
+    },
+    {
+      "name": "SolderingStation",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_station"
     }
   ],
   "variable_elements": [],
@@ -255,6 +263,7 @@
   "language_map": {
     "en_us": {
       "block.ktmod.tank": "Tank",
+      "block.ktmod.soldering_station": "Soldering Station",
       "fluid.ktmod.fuel": "Fuel",
       "item.ktmod.internal_combustion_engine": "Internal Combustion Engine",
       "item.ktmod.fuel_bucket": "Fuel Bucket",

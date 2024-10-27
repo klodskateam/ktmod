@@ -34,6 +34,7 @@ public class KtmodModItems {
 	public static final RegistryObject<Item> TANK = block(KtmodModBlocks.TANK, KtmodModTabs.TAB_TAB);
 	public static final RegistryObject<Item> CRYSTAL = REGISTRY.register("crystal", () -> new CrystalItem());
 	public static final RegistryObject<Item> PROCESSED_BEDROCK = block(KtmodModBlocks.PROCESSED_BEDROCK, KtmodModTabs.TAB_TAB);
+	public static final RegistryObject<Item> SOLDERING_STATION = block(KtmodModBlocks.SOLDERING_STATION, KtmodModTabs.TAB_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
