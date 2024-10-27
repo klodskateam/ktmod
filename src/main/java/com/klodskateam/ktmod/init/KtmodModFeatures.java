@@ -22,6 +22,7 @@ import java.util.Set;
 import java.util.List;
 import java.util.ArrayList;
 
+import com.klodskateam.ktmod.world.features.ores.UranOreFeature;
 import com.klodskateam.ktmod.world.features.ores.OilOreFeature;
 import com.klodskateam.ktmod.world.features.ores.NetherOilOreFeature;
 import com.klodskateam.ktmod.KtmodMod;
@@ -34,6 +35,8 @@ public class KtmodModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, OilOreFeature.GENERATE_BIOMES, OilOreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> NETHER_OIL_ORE = register("nether_oil_ore", NetherOilOreFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.UNDERGROUND_ORES, NetherOilOreFeature.GENERATE_BIOMES, NetherOilOreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> URAN_ORE = register("uran_ore", UranOreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, UranOreFeature.GENERATE_BIOMES, UranOreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

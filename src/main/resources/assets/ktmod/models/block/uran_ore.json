@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ktmod:blocks/uran_ore",
+    "up": "ktmod:blocks/uran_ore",
+    "north": "ktmod:blocks/uran_ore",
+    "east": "ktmod:blocks/uran_ore",
+    "south": "ktmod:blocks/uran_ore",
+    "west": "ktmod:blocks/uran_ore",
+    "particle": "ktmod:blocks/uran_ore"
+  }
+}

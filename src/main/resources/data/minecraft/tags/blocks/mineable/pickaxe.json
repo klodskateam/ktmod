@@ -5,6 +5,7 @@
     "ktmod:nether_oil_ore",
     "ktmod:distillation_column",
     "ktmod:bedrock_miner",
-    "ktmod:processed_bedrock"
+    "ktmod:processed_bedrock",
+    "ktmod:uran_ore"
   ]
 }

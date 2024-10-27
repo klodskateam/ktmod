@@ -39,6 +39,7 @@ public class KtmodModItems {
 	public static final RegistryObject<Item> SOLDERING_STATION = block(KtmodModBlocks.SOLDERING_STATION, KtmodModTabs.TAB_TAB);
 	public static final RegistryObject<Item> COPPER_WIRE = REGISTRY.register("copper_wire", () -> new CopperWireItem());
 	public static final RegistryObject<Item> REGULAR_CHIP = REGISTRY.register("regular_chip", () -> new RegularChipItem());
+	public static final RegistryObject<Item> URAN_ORE = block(KtmodModBlocks.URAN_ORE, KtmodModTabs.TAB_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

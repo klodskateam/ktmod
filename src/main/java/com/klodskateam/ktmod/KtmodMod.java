@@ -31,6 +31,7 @@ import java.util.function.Function;
 import java.util.function.BiConsumer;
 
 import com.klodskateam.ktmod.init.KtmodModTabs;
+import com.klodskateam.ktmod.init.KtmodModParticleTypes;
 import com.klodskateam.ktmod.init.KtmodModItems;
 import com.klodskateam.ktmod.init.KtmodModFluids;
 import com.klodskateam.ktmod.init.KtmodModFeatures;
@@ -56,6 +57,7 @@ public class KtmodMod {
 		KtmodModFeatures.REGISTRY.register(bus);
 		KtmodModFluids.REGISTRY.register(bus);
 
+		KtmodModParticleTypes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder,
