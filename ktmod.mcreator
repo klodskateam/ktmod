@@ -336,7 +336,7 @@
       "block.ktmod.fuel": "Fuel",
       "block.ktmod.bedrock_miner": "Bedrock Miner",
       "item.ktmod.crystal": "Crystal",
-      "item.ktmod.regular_chip": "Regular Chip",
+      "item.ktmod.regular_chip": "Basic Chip",
       "itemGroup.tabtab": "KTMod",
       "block.ktmod.nether_oil_ore": "Oil Ore"
     }
