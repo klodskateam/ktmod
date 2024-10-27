@@ -14,6 +14,7 @@
   "block.ktmod.bedrock_miner": "Bedrock Miner",
   "item.ktmod.crystal": "Crystal",
   "item.ktmod.regular_chip": "Basic Chip",
+  "block.ktmod.uran_ore": "Uran Ore",
   "itemGroup.tabtab": "KTMod",
   "block.ktmod.nether_oil_ore": "Oil Ore"
 }
