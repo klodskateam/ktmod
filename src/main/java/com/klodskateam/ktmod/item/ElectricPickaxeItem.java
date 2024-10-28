@@ -1,7 +1,27 @@
 
 package com.klodskateam.ktmod.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.BlockPos;
+
+import java.util.List;
+
+import com.klodskateam.ktmod.procedures.ElectricPickaxeMenuProcedure;
+import com.klodskateam.ktmod.procedures.ElectricPickaxeBlockDestroyedWithToolProcedure;
 
 public class ElectricPickaxeItem extends PickaxeItem {
 	public ElectricPickaxeItem() {
@@ -29,11 +49,7 @@ public class ElectricPickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		},
-
-				1, -3f,
-
-				new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
 
 	@Override
@@ -63,5 +79,4 @@ public class ElectricPickaxeItem extends PickaxeItem {
 		list.add(new TextComponent("When you are lazy"));
 		list.add(new TextComponent("try making electricity your friend"));
 	}
-
 }

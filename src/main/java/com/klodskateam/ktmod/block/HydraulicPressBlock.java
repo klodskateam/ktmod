@@ -44,7 +44,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-import com.klodskateam.ktmod.world.inventory.HydraulicPressGUIMenu;
+import com.klodskateam.ktmod.world.inventory.HydraulicPressGuiMenu;
 import com.klodskateam.ktmod.init.KtmodModBlocks;
 import com.klodskateam.ktmod.block.entity.HydraulicPressBlockEntity;
 
@@ -108,7 +108,7 @@ public class HydraulicPressBlock extends Block
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new HydraulicPressGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new HydraulicPressGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}

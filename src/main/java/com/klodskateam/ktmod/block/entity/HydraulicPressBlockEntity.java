@@ -28,7 +28,7 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-import com.klodskateam.ktmod.world.inventory.HydraulicPressGUIMenu;
+import com.klodskateam.ktmod.world.inventory.HydraulicPressGuiMenu;
 import com.klodskateam.ktmod.init.KtmodModBlockEntities;
 
 public class HydraulicPressBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
@@ -90,7 +90,7 @@ public class HydraulicPressBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new HydraulicPressGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new HydraulicPressGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override

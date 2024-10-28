@@ -11,24 +11,8 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "label",
+        "type": "outputslot",
         "data": {
-          "text": "<fluidlevel>/10000",
-          "color": {
-            "value": -6711040,
-            "falpha": 0.0
-          },
-          "name": "<fluidlevel>/10000",
-          "x": 132,
-          "y": 107
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
@@ -38,8 +22,11 @@
         }
       },
       {
-        "type": "outputslot",
+        "type": "inputslot",
         "data": {
+          "inputLimit": {
+            "value": ""
+          },
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
@@ -71,6 +58,19 @@
           "name": "Slot #3",
           "x": 258,
           "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<fluidlevel>/10000",
+          "color": {
+            "value": -10066432,
+            "falpha": 0.0
+          },
+          "name": "<fluidlevel>/10000",
+          "x": 132,
+          "y": 107
         }
       }
     ],

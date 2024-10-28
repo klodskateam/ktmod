@@ -1,8 +1,15 @@
 package com.klodskateam.ktmod.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
+
+import net.minecraft.world.item.ItemStack;
 
 import javax.annotation.Nullable;
+
+import java.util.Random;
 
 @Mod.EventBusSubscriber
 public class ElectricPickaxeBlockDestroyedWithToolProcedure {
