@@ -13,6 +13,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import com.klodskateam.ktmod.client.gui.TankGUIScreen;
 import com.klodskateam.ktmod.client.gui.SolderingStationGUIScreen;
+import com.klodskateam.ktmod.client.gui.SmelterGUIScreen;
 import com.klodskateam.ktmod.client.gui.OreProcessorGUIScreen;
 import com.klodskateam.ktmod.client.gui.HydraulicPressGuiScreen;
 import com.klodskateam.ktmod.client.gui.ElectricPickaxeGUIScreen;
@@ -31,6 +32,7 @@ public class KtmodModScreens {
 			MenuScreens.register(KtmodModMenus.ELECTRIC_PICKAXE_GUI, ElectricPickaxeGUIScreen::new);
 			MenuScreens.register(KtmodModMenus.HYDRAULIC_PRESS_GUI, HydraulicPressGuiScreen::new);
 			MenuScreens.register(KtmodModMenus.ORE_PROCESSOR_GUI, OreProcessorGUIScreen::new);
+			MenuScreens.register(KtmodModMenus.SMELTER_GUI, SmelterGUIScreen::new);
 		});
 	}
 }

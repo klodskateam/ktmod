@@ -7,6 +7,7 @@
     "ktmod:bedrock_miner",
     "ktmod:processed_bedrock",
     "ktmod:uran_ore",
-    "ktmod:ore_processor"
+    "ktmod:ore_processor",
+    "ktmod:smelter"
   ]
 }
