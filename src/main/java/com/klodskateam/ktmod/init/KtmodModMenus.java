@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 import com.klodskateam.ktmod.world.inventory.TankGUIMenu;
 import com.klodskateam.ktmod.world.inventory.SolderingStationGUIMenu;
+import com.klodskateam.ktmod.world.inventory.SmelterGUIMenu;
 import com.klodskateam.ktmod.world.inventory.OreProcessorGUIMenu;
 import com.klodskateam.ktmod.world.inventory.HydraulicPressGuiMenu;
 import com.klodskateam.ktmod.world.inventory.ElectricPickaxeGUIMenu;
@@ -39,6 +40,8 @@ public class KtmodModMenus {
 			(id, inv, extraData) -> new HydraulicPressGuiMenu(id, inv, extraData));
 	public static final MenuType<OreProcessorGUIMenu> ORE_PROCESSOR_GUI = register("ore_processor_gui",
 			(id, inv, extraData) -> new OreProcessorGUIMenu(id, inv, extraData));
+	public static final MenuType<SmelterGUIMenu> SMELTER_GUI = register("smelter_gui",
+			(id, inv, extraData) -> new SmelterGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ktmod:blocks/smelter",
+    "up": "ktmod:blocks/smelter",
+    "north": "ktmod:blocks/smelter",
+    "east": "ktmod:blocks/smelter",
+    "south": "ktmod:blocks/smelter",
+    "west": "ktmod:blocks/smelter",
+    "particle": "ktmod:blocks/smelter"
+  }
+}

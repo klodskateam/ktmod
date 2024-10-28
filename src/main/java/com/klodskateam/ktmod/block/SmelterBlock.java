@@ -36,15 +36,15 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-import com.klodskateam.ktmod.world.inventory.BedrockMinerGuiMenu;
-import com.klodskateam.ktmod.procedures.BedrockMinerObnovitTaktProcedure;
-import com.klodskateam.ktmod.block.entity.BedrockMinerBlockEntity;
+import com.klodskateam.ktmod.world.inventory.SmelterGUIMenu;
+import com.klodskateam.ktmod.procedures.SmelterObnovitTaktProcedure;
+import com.klodskateam.ktmod.block.entity.SmelterBlockEntity;
 
-public class BedrockMinerBlock extends Block
+public class SmelterBlock extends Block
 		implements
 
 			EntityBlock {
-	public BedrockMinerBlock() {
+	public SmelterBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f).requiresCorrectToolForDrops());
 	}
 
@@ -81,7 +81,7 @@ public class BedrockMinerBlock extends Block
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		BedrockMinerObnovitTaktProcedure.execute(world, x, y, z);
+		SmelterObnovitTaktProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 20);
 	}
 
@@ -92,12 +92,12 @@ public class BedrockMinerBlock extends Block
 			NetworkHooks.openGui(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return new TextComponent("Bedrock Miner");
+					return new TextComponent("Smelter");
 				}
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new BedrockMinerGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new SmelterGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}
@@ -112,7 +112,7 @@ public class BedrockMinerBlock extends Block
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new BedrockMinerBlockEntity(pos, state);
+		return new SmelterBlockEntity(pos, state);
 	}
 
 	@Override
@@ -126,7 +126,7 @@ public class BedrockMinerBlock extends Block
 	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
 		if (state.getBlock() != newState.getBlock()) {
 			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof BedrockMinerBlockEntity be) {
+			if (blockEntity instanceof SmelterBlockEntity be) {
 				Containers.dropContents(world, pos, be);
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
@@ -142,7 +142,7 @@ public class BedrockMinerBlock extends Block
 	@Override
 	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof BedrockMinerBlockEntity be)
+		if (tileentity instanceof SmelterBlockEntity be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;

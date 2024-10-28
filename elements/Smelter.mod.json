@@ -2,7 +2,7 @@
   "_fv": 33,
   "_type": "block",
   "definition": {
-    "texture": "bedrock_miner",
+    "texture": "smelter",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Bedrock Miner",
+    "name": "Smelter",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -101,15 +101,15 @@
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:Radiation"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "BedrockMinerGui",
+    "guiBoundTo": "SmelterGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 3,
+    "inventorySize": 6,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -121,10 +121,10 @@
     "energyMaxReceive": 200,
     "energyMaxExtract": 200,
     "isFluidTank": true,
-    "fluidCapacity": 1000,
+    "fluidCapacity": 10000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "BedrockMinerObnovitTakt"
+      "name": "SmelterObnovitTakt"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

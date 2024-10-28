@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "ktmod:crystal"
+    },
+    "1": {
+      "item": "ktmod:crystal"
+    },
+    "2": {
+      "item": "ktmod:crystal"
+    },
+    "3": {
+      "item": "ktmod:crystal"
+    },
+    "5": {
+      "item": "ktmod:crystal"
+    }
+  },
+  "result": {
+    "item": "ktmod:bedrock_crystal_armor_helmet",
+    "count": 1
+  }
+}
