@@ -13,13 +13,18 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import com.klodskateam.ktmod.item.RubberItem;
 import com.klodskateam.ktmod.item.RegularChipItem;
+import com.klodskateam.ktmod.item.ProtectArmorItem;
+import com.klodskateam.ktmod.item.ProcessedUraniumItem;
 import com.klodskateam.ktmod.item.PlasticItem;
+import com.klodskateam.ktmod.item.IronPlateItem;
 import com.klodskateam.ktmod.item.InternalCombustionEngineItem;
 import com.klodskateam.ktmod.item.FuelItem;
 import com.klodskateam.ktmod.item.CrystalItem;
 import com.klodskateam.ktmod.item.CopperWireItem;
 import com.klodskateam.ktmod.item.BearingItem;
+import com.klodskateam.ktmod.item.BatteryItem;
 import com.klodskateam.ktmod.KtmodMod;
 
 public class KtmodModItems {
@@ -40,6 +45,18 @@ public class KtmodModItems {
 	public static final RegistryObject<Item> COPPER_WIRE = REGISTRY.register("copper_wire", () -> new CopperWireItem());
 	public static final RegistryObject<Item> REGULAR_CHIP = REGISTRY.register("regular_chip", () -> new RegularChipItem());
 	public static final RegistryObject<Item> URAN_ORE = block(KtmodModBlocks.URAN_ORE, KtmodModTabs.TAB_TAB);
+	public static final RegistryObject<Item> ORE_PROCESSOR = block(KtmodModBlocks.ORE_PROCESSOR, KtmodModTabs.TAB_TAB);
+	public static final RegistryObject<Item> PROCESSED_URANIUM = REGISTRY.register("processed_uranium", () -> new ProcessedUraniumItem());
+	public static final RegistryObject<Item> RUBBER = REGISTRY.register("rubber", () -> new RubberItem());
+	public static final RegistryObject<Item> PROTECT_ARMOR_HELMET = REGISTRY.register("protect_armor_helmet", () -> new ProtectArmorItem.Helmet());
+	public static final RegistryObject<Item> PROTECT_ARMOR_CHESTPLATE = REGISTRY.register("protect_armor_chestplate",
+			() -> new ProtectArmorItem.Chestplate());
+	public static final RegistryObject<Item> PROTECT_ARMOR_LEGGINGS = REGISTRY.register("protect_armor_leggings",
+			() -> new ProtectArmorItem.Leggings());
+	public static final RegistryObject<Item> PROTECT_ARMOR_BOOTS = REGISTRY.register("protect_armor_boots", () -> new ProtectArmorItem.Boots());
+	public static final RegistryObject<Item> BATTERY = REGISTRY.register("battery", () -> new BatteryItem());
+	public static final RegistryObject<Item> HYDRAULIC_PRESS = block(KtmodModBlocks.HYDRAULIC_PRESS, KtmodModTabs.TAB_TAB);
+	public static final RegistryObject<Item> IRON_PLATE = REGISTRY.register("iron_plate", () -> new IronPlateItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ktmod:iron_plate"
+    },
+    "1": {
+      "item": "ktmod:copper_wire"
+    },
+    "2": {
+      "item": "ktmod:iron_plate"
+    },
+    "3": {
+      "item": "ktmod:iron_plate"
+    },
+    "4": {
+      "tag": "minecraft:coals"
+    },
+    "5": {
+      "item": "ktmod:iron_plate"
+    },
+    "6": {
+      "item": "ktmod:iron_plate"
+    },
+    "7": {
+      "tag": "minecraft:coals"
+    },
+    "8": {
+      "item": "ktmod:iron_plate"
+    }
+  },
+  "result": {
+    "item": "ktmod:battery",
+    "count": 1
+  }
+}

@@ -18,8 +18,10 @@ import com.klodskateam.ktmod.block.UranOreBlock;
 import com.klodskateam.ktmod.block.TankBlock;
 import com.klodskateam.ktmod.block.SolderingStationBlock;
 import com.klodskateam.ktmod.block.ProcessedBedrockBlock;
+import com.klodskateam.ktmod.block.OreProcessorBlock;
 import com.klodskateam.ktmod.block.OilOreBlock;
 import com.klodskateam.ktmod.block.NetherOilOreBlock;
+import com.klodskateam.ktmod.block.HydraulicPressBlock;
 import com.klodskateam.ktmod.block.FuelBlock;
 import com.klodskateam.ktmod.block.DistillationColumnBlock;
 import com.klodskateam.ktmod.block.BedrockMinerBlock;
@@ -36,6 +38,8 @@ public class KtmodModBlocks {
 	public static final RegistryObject<Block> PROCESSED_BEDROCK = REGISTRY.register("processed_bedrock", () -> new ProcessedBedrockBlock());
 	public static final RegistryObject<Block> SOLDERING_STATION = REGISTRY.register("soldering_station", () -> new SolderingStationBlock());
 	public static final RegistryObject<Block> URAN_ORE = REGISTRY.register("uran_ore", () -> new UranOreBlock());
+	public static final RegistryObject<Block> ORE_PROCESSOR = REGISTRY.register("ore_processor", () -> new OreProcessorBlock());
+	public static final RegistryObject<Block> HYDRAULIC_PRESS = REGISTRY.register("hydraulic_press", () -> new HydraulicPressBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -43,6 +47,7 @@ public class KtmodModBlocks {
 		public static void clientSetup(FMLClientSetupEvent event) {
 			TankBlock.registerRenderLayer();
 			SolderingStationBlock.registerRenderLayer();
+			HydraulicPressBlock.registerRenderLayer();
 		}
 	}
 }

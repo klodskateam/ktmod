@@ -13,6 +13,8 @@ import net.minecraft.world.level.block.Block;
 
 import com.klodskateam.ktmod.block.entity.TankBlockEntity;
 import com.klodskateam.ktmod.block.entity.SolderingStationBlockEntity;
+import com.klodskateam.ktmod.block.entity.OreProcessorBlockEntity;
+import com.klodskateam.ktmod.block.entity.HydraulicPressBlockEntity;
 import com.klodskateam.ktmod.block.entity.DistillationColumnBlockEntity;
 import com.klodskateam.ktmod.block.entity.BedrockMinerBlockEntity;
 import com.klodskateam.ktmod.KtmodMod;
@@ -26,6 +28,10 @@ public class KtmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> TANK = register("tank", KtmodModBlocks.TANK, TankBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SOLDERING_STATION = register("soldering_station", KtmodModBlocks.SOLDERING_STATION,
 			SolderingStationBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> ORE_PROCESSOR = register("ore_processor", KtmodModBlocks.ORE_PROCESSOR,
+			OreProcessorBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> HYDRAULIC_PRESS = register("hydraulic_press", KtmodModBlocks.HYDRAULIC_PRESS,
+			HydraulicPressBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

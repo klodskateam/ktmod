@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ktmod:plastic"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "ktmod:plastic"
+    },
+    "3": {
+      "item": "ktmod:plastic"
+    },
+    "4": {
+      "tag": "minecraft:anvil"
+    },
+    "5": {
+      "item": "ktmod:plastic"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "ktmod:hydraulic_press",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "ktmod:custom/hydraulicpress",
+  "textures": {
+    "all": "ktmod:blocks/texture1",
+    "particle": "ktmod:blocks/texture1",
+    "0": "ktmod:blocks/texture1"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Rubber"
+      },
+      {
+        "value": "CUSTOM:Rubber"
+      },
+      {
+        "value": "CUSTOM:Rubber"
+      },
+      {
+        "value": "CUSTOM:Rubber"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Rubber"
+      },
+      {
+        "value": "CUSTOM:Rubber"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Rubber"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ProtectArmor.legs"
+    },
+    "name": "protect_armor_leggings_recipe",
+    "namespace": "mod"
+  }
+}

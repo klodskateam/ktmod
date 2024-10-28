@@ -13,6 +13,8 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import com.klodskateam.ktmod.client.gui.TankGUIScreen;
 import com.klodskateam.ktmod.client.gui.SolderingStationGUIScreen;
+import com.klodskateam.ktmod.client.gui.OreProcessorGUIScreen;
+import com.klodskateam.ktmod.client.gui.HydraulicPressGUIScreen;
 import com.klodskateam.ktmod.client.gui.DistillationColumnGUIScreen;
 import com.klodskateam.ktmod.client.gui.BedrockMinerGuiScreen;
 
@@ -25,6 +27,8 @@ public class KtmodModScreens {
 			MenuScreens.register(KtmodModMenus.TANK_GUI, TankGUIScreen::new);
 			MenuScreens.register(KtmodModMenus.BEDROCK_MINER_GUI, BedrockMinerGuiScreen::new);
 			MenuScreens.register(KtmodModMenus.SOLDERING_STATION_GUI, SolderingStationGUIScreen::new);
+			MenuScreens.register(KtmodModMenus.ORE_PROCESSOR_GUI, OreProcessorGUIScreen::new);
+			MenuScreens.register(KtmodModMenus.HYDRAULIC_PRESS_GUI, HydraulicPressGUIScreen::new);
 		});
 	}
 }

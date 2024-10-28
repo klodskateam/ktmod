@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ktmod:blocks/ore_processor_texture",
+    "up": "ktmod:blocks/ore_processor_texture",
+    "north": "ktmod:blocks/ore_processor_texture",
+    "east": "ktmod:blocks/ore_processor_texture",
+    "south": "ktmod:blocks/ore_processor_texture",
+    "west": "ktmod:blocks/ore_processor_texture",
+    "particle": "ktmod:blocks/ore_processor_texture"
+  }
+}

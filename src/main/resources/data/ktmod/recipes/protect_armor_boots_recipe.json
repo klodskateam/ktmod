@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "ktmod:rubber"
+    },
+    "2": {
+      "item": "ktmod:rubber"
+    },
+    "3": {
+      "item": "ktmod:rubber"
+    },
+    "5": {
+      "item": "ktmod:rubber"
+    }
+  },
+  "result": {
+    "item": "ktmod:protect_armor_boots",
+    "count": 1
+  }
+}
