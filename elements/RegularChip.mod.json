@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "microchip_txture",
+    "texture": "regular_chip",
     "customModelName": "Normal",
-    "name": "Basic Chip",
+    "name": "Regular Chip",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Tab"

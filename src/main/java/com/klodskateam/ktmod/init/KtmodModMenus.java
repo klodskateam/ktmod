@@ -19,6 +19,7 @@ import com.klodskateam.ktmod.world.inventory.TankGUIMenu;
 import com.klodskateam.ktmod.world.inventory.SolderingStationGUIMenu;
 import com.klodskateam.ktmod.world.inventory.OreProcessorGUIMenu;
 import com.klodskateam.ktmod.world.inventory.HydraulicPressGUIMenu;
+import com.klodskateam.ktmod.world.inventory.ElectricPickaxeGUIMenu;
 import com.klodskateam.ktmod.world.inventory.DistillationColumnGUIMenu;
 import com.klodskateam.ktmod.world.inventory.BedrockMinerGuiMenu;
 
@@ -34,6 +35,8 @@ public class KtmodModMenus {
 			(id, inv, extraData) -> new SolderingStationGUIMenu(id, inv, extraData));
 	public static final MenuType<OreProcessorGUIMenu> ORE_PROCESSOR_GUI = register("ore_processor_gui",
 			(id, inv, extraData) -> new OreProcessorGUIMenu(id, inv, extraData));
+	public static final MenuType<ElectricPickaxeGUIMenu> ELECTRIC_PICKAXE_GUI = register("electric_pickaxe_gui",
+			(id, inv, extraData) -> new ElectricPickaxeGUIMenu(id, inv, extraData));
 	public static final MenuType<HydraulicPressGUIMenu> HYDRAULIC_PRESS_GUI = register("hydraulic_press_gui",
 			(id, inv, extraData) -> new HydraulicPressGUIMenu(id, inv, extraData));
 

@@ -1,12 +1,8 @@
 package com.klodskateam.ktmod.procedures;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageSource;
+import net.minecraftforge.eventbus.api.Event;
 
-import com.klodskateam.ktmod.init.KtmodModItems;
+import javax.annotation.Nullable;
 
 public class ProcessedUraniumKoghdaPriedmietVInvientarieProcedure {
 	public static void execute(Entity entity) {

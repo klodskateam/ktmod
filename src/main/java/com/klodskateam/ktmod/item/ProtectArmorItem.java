@@ -1,22 +1,10 @@
 
 package com.klodskateam.ktmod.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
-
-import com.klodskateam.ktmod.init.KtmodModTabs;
-import com.klodskateam.ktmod.init.KtmodModItems;
 
 public abstract class ProtectArmorItem extends ArmorItem {
+
 	public ProtectArmorItem(EquipmentSlot slot, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -41,7 +29,7 @@ public abstract class ProtectArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(KtmodModItems.RUBBER.get()));
+				return Ingredient.of(new ItemStack(KtmodModItems.DELETED_MOD_ELEMENT.get()));
 			}
 
 			@Override
@@ -62,6 +50,7 @@ public abstract class ProtectArmorItem extends ArmorItem {
 	}
 
 	public static class Helmet extends ProtectArmorItem {
+
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(KtmodModTabs.TAB_TAB));
 		}
@@ -70,9 +59,11 @@ public abstract class ProtectArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "ktmod:textures/models/armor/protect_layer_1.png";
 		}
+
 	}
 
 	public static class Chestplate extends ProtectArmorItem {
+
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(KtmodModTabs.TAB_TAB));
 		}
@@ -81,9 +72,11 @@ public abstract class ProtectArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "ktmod:textures/models/armor/protect_layer_1.png";
 		}
+
 	}
 
 	public static class Leggings extends ProtectArmorItem {
+
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(KtmodModTabs.TAB_TAB));
 		}
@@ -92,9 +85,11 @@ public abstract class ProtectArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "ktmod:textures/models/armor/protect_layer_2.png";
 		}
+
 	}
 
 	public static class Boots extends ProtectArmorItem {
+
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(KtmodModTabs.TAB_TAB));
 		}
@@ -103,5 +98,7 @@ public abstract class ProtectArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "ktmod:textures/models/armor/protect_layer_1.png";
 		}
+
 	}
+
 }

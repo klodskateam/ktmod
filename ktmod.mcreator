@@ -334,36 +334,34 @@
       "registry_name": "radiation"
     },
     {
-      "name": "OreProcessor",
-      "type": "block",
-      "sortid": 31,
+      "name": "ProtectArmor",
+      "type": "armor",
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ore_processor"
-    },
-    {
-      "name": "OreProcessorGUI",
-      "type": "gui",
-      "sortid": 32,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ore_processor_gui"
-    },
-    {
-      "name": "ProcessedUraniumKoghdaPriedmietVInvientarie",
-      "type": "procedure",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "processed_uranium_koghda_priedmiet_v_invientarie",
+      "registry_name": "protect_armor",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
       }
+    },
+    {
+      "name": "OreProcessorCraft",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_processor_craft"
+    },
+    {
+      "name": "IronPlate",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_plate"
     },
     {
       "name": "ProcessedUranium",
@@ -372,6 +370,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "processed_uranium"
+    },
+    {
+      "name": "OreProcessor",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_processor"
+    },
+    {
+      "name": "HydraulicPressCraft",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydraulic_press_craft"
     },
     {
       "name": "OreProcessorObnovitTakt",
@@ -402,34 +416,36 @@
       }
     },
     {
-      "name": "OreProcessorCraft",
+      "name": "BatteryCraft",
       "type": "recipe",
-      "sortid": 34,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ore_processor_craft"
+      "registry_name": "battery_craft"
     },
     {
-      "name": "Rubber",
-      "type": "item",
-      "sortid": 35,
+      "name": "ProcessedUraniumKoghdaPriedmietVInvientarie",
+      "type": "procedure",
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rubber"
-    },
-    {
-      "name": "ProtectArmor",
-      "type": "armor",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "protect_armor",
+      "registry_name": "processed_uranium_koghda_priedmiet_v_invientarie",
       "metadata": {
-        "eh": true,
-        "el": true,
-        "eb": true,
-        "ec": true
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
+    },
+    {
+      "name": "HydraulicPressGUI",
+      "type": "gui",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydraulic_press_gui"
     },
     {
       "name": "ProtectArmorHelmetRecipe",
@@ -440,52 +456,12 @@
       "registry_name": "protect_armor_helmet_recipe"
     },
     {
-      "name": "ProtectArmorBodyRecipe",
-      "type": "recipe",
-      "sortid": 38,
+      "name": "OreProcessorGUI",
+      "type": "gui",
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "protect_armor_body_recipe"
-    },
-    {
-      "name": "ProtectArmorLeggingsRecipe",
-      "type": "recipe",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "protect_armor_leggings_recipe"
-    },
-    {
-      "name": "ProtectArmorBootsRecipe",
-      "type": "recipe",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "protect_armor_boots_recipe"
-    },
-    {
-      "name": "Battery",
-      "type": "item",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "battery"
-    },
-    {
-      "name": "HydraulicPress",
-      "type": "block",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydraulic_press"
-    },
-    {
-      "name": "IronPlate",
-      "type": "item",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_plate"
+      "registry_name": "ore_processor_gui"
     },
     {
       "name": "HydraulicPressProcedure",
@@ -516,33 +492,150 @@
       }
     },
     {
-      "name": "HydraulicPressGUI",
+      "name": "ProtectArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protect_armor_body_recipe"
+    },
+    {
+      "name": "HydraulicPress",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydraulic_press"
+    },
+    {
+      "name": "ProtectArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protect_armor_leggings_recipe"
+    },
+    {
+      "name": "Rubber",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rubber"
+    },
+    {
+      "name": "ProtectArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "protect_armor_boots_recipe"
+    },
+    {
+      "name": "ElectricPickaxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pickaxe_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElectricPickaxeGUI",
       "type": "gui",
-      "sortid": 43,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hydraulic_press_gui"
+      "registry_name": "electric_pickaxe_gui"
     },
     {
-      "name": "HydraulicPressCraft",
-      "type": "recipe",
-      "sortid": 44,
+      "name": "ElectricPickaxeMenu",
+      "type": "procedure",
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hydraulic_press_craft"
+      "registry_name": "electric_pickaxe_menu",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     },
     {
-      "name": "BatteryCraft",
-      "type": "recipe",
-      "sortid": 45,
+      "name": "ElectricPickaxe",
+      "type": "tool",
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "battery_craft"
+      "registry_name": "electric_pickaxe"
+    },
+    {
+      "name": "ElectricPickaxeCraft",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pickaxe_craft"
+    },
+    {
+      "name": "Battery",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
+    "ru_ru": {
+      "item.ktmod.copper_wire": "Медный провод",
+      "block.ktmod.tank": "Бак",
+      "block.ktmod.soldering_station": "Паяльная станция",
+      "fluid.ktmod.fuel": "Топливо",
+      "item.ktmod.internal_combustion_engine": "Двигатель внутреннего сгорания",
+      "item.ktmod.fuel_bucket": "Ведро с топливом",
+      "item.ktmod.bearing": "Bearing",
+      "block.ktmod.processed_bedrock": "Обработанный бедрок",
+      "item.ktmod.plastic": "Пластик",
+      "block.ktmod.oil_ore": "Нефтяная руда",
+      "block.ktmod.distillation_column": "Distillation Column",
+      "item.ktmod.battery": "Battery",
+      "block.ktmod.fuel": "Топливо",
+      "block.ktmod.bedrock_miner": "Обработчик бедрока",
+      "item.ktmod.crystal": "Кристалл",
+      "item.ktmod.regular_chip": "Базовый микрочип",
+      "block.ktmod.uran_ore": "Урановая руда",
+      "itemGroup.tabtab": "KTMod",
+      "block.ktmod.nether_oil_ore": "Нефтяная руда"
+    },
     "en_us": {
       "item.ktmod.copper_wire": "Copper Wire",
       "item.ktmod.iron_plate": "Iron Plate",

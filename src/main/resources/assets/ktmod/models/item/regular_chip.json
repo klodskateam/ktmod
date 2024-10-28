@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ktmod:items/microchip_txture"
+    "layer0": "ktmod:items/regular_chip"
   }
 }

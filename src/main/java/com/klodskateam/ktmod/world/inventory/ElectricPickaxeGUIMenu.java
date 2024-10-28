@@ -3,7 +3,7 @@ package com.klodskateam.ktmod.world.inventory;
 
 import com.klodskateam.ktmod.KtmodMod;
 
-public class OreProcessorGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class ElectricPickaxeGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 
@@ -17,13 +17,13 @@ public class OreProcessorGUIMenu extends AbstractContainerMenu implements Suppli
 
 	private boolean bound = false;
 
-	public OreProcessorGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(KtmodModMenus.ORE_PROCESSOR_GUI, id);
+	public ElectricPickaxeGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(KtmodModMenus.ELECTRIC_PICKAXE_GUI, id);
 
 		this.entity = inv.player;
 		this.world = inv.player.level;
 
-		this.internal = new ItemStackHandler(4);
+		this.internal = new ItemStackHandler(3);
 
 		BlockPos pos = null;
 		if (extraData != null) {
@@ -64,24 +64,25 @@ public class OreProcessorGUIMenu extends AbstractContainerMenu implements Suppli
 			}
 		}
 
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 26) {
-
-		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 16, 44) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 60, 37) {
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return false;
+				return (KtmodModItems.DELETED_MOD_ELEMENT.get() == stack.getItem());
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 61, 35) {
-
-		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 35) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 37) {
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return false;
+				return (KtmodModItems.DELETED_MOD_ELEMENT.get() == stack.getItem());
+			}
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 98, 37) {
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return (KtmodModItems.DELETED_MOD_ELEMENT.get() == stack.getItem());
 			}
 		}));
 
@@ -108,18 +109,18 @@ public class OreProcessorGUIMenu extends AbstractContainerMenu implements Suppli
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
 
-			if (index < 4) {
-				if (!this.moveItemStackTo(itemstack1, 4, this.slots.size(), true)) {
+			if (index < 3) {
+				if (!this.moveItemStackTo(itemstack1, 3, this.slots.size(), true)) {
 					return ItemStack.EMPTY;
 				}
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 4, false)) {
-				if (index < 4 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 4 + 27, this.slots.size(), true)) {
+			} else if (!this.moveItemStackTo(itemstack1, 0, 3, false)) {
+				if (index < 3 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 3 + 27, this.slots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 4, 4 + 27, false)) {
+					if (!this.moveItemStackTo(itemstack1, 3, 3 + 27, false)) {
 						return ItemStack.EMPTY;
 					}
 				}

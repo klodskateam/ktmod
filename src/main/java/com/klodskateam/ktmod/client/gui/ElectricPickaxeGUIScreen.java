@@ -1,15 +1,15 @@
 
 package com.klodskateam.ktmod.client.gui;
 
-public class HydraulicPressGUIScreen extends AbstractContainerScreen<HydraulicPressGUIMenu> {
+public class ElectricPickaxeGUIScreen extends AbstractContainerScreen<ElectricPickaxeGUIMenu> {
 
-	private final static HashMap<String, Object> guistate = HydraulicPressGUIMenu.guistate;
+	private final static HashMap<String, Object> guistate = ElectricPickaxeGUIMenu.guistate;
 
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public HydraulicPressGUIScreen(HydraulicPressGUIMenu container, Inventory inventory, Component text) {
+	public ElectricPickaxeGUIScreen(ElectricPickaxeGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -20,7 +20,7 @@ public class HydraulicPressGUIScreen extends AbstractContainerScreen<HydraulicPr
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("ktmod:textures/screens/hydraulic_press_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("ktmod:textures/screens/electric_pickaxe_gui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -59,6 +59,7 @@ public class HydraulicPressGUIScreen extends AbstractContainerScreen<HydraulicPr
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+		this.font.draw(poseStack, "Electric Pickaxe", 46, 5, -12829636);
 	}
 
 	@Override
@@ -73,12 +74,6 @@ public class HydraulicPressGUIScreen extends AbstractContainerScreen<HydraulicPr
 
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 
-		this.addRenderableWidget(new Button(this.leftPos + 60, this.topPos + 25, 51, 20, new TextComponent("Press"), e -> {
-			if (true) {
-				KtmodMod.PACKET_HANDLER.sendToServer(new HydraulicPressGUIButtonMessage(0, x, y, z));
-				HydraulicPressGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}));
 	}
 
 }

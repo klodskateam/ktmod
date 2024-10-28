@@ -21,6 +21,7 @@ import com.klodskateam.ktmod.item.PlasticItem;
 import com.klodskateam.ktmod.item.IronPlateItem;
 import com.klodskateam.ktmod.item.InternalCombustionEngineItem;
 import com.klodskateam.ktmod.item.FuelItem;
+import com.klodskateam.ktmod.item.ElectricPickaxeItem;
 import com.klodskateam.ktmod.item.CrystalItem;
 import com.klodskateam.ktmod.item.CopperWireItem;
 import com.klodskateam.ktmod.item.BearingItem;
@@ -46,6 +47,7 @@ public class KtmodModItems {
 	public static final RegistryObject<Item> REGULAR_CHIP = REGISTRY.register("regular_chip", () -> new RegularChipItem());
 	public static final RegistryObject<Item> URAN_ORE = block(KtmodModBlocks.URAN_ORE, KtmodModTabs.TAB_TAB);
 	public static final RegistryObject<Item> ORE_PROCESSOR = block(KtmodModBlocks.ORE_PROCESSOR, KtmodModTabs.TAB_TAB);
+	public static final RegistryObject<Item> ELECTRIC_PICKAXE = REGISTRY.register("electric_pickaxe", () -> new ElectricPickaxeItem());
 	public static final RegistryObject<Item> PROCESSED_URANIUM = REGISTRY.register("processed_uranium", () -> new ProcessedUraniumItem());
 	public static final RegistryObject<Item> RUBBER = REGISTRY.register("rubber", () -> new RubberItem());
 	public static final RegistryObject<Item> PROTECT_ARMOR_HELMET = REGISTRY.register("protect_armor_helmet", () -> new ProtectArmorItem.Helmet());
