@@ -53,7 +53,6 @@ public class KtmodModItems {
 	public static final RegistryObject<Item> ORE_PROCESSOR = block(KtmodModBlocks.ORE_PROCESSOR, KtmodModTabs.TAB_TAB);
 	public static final RegistryObject<Item> ELECTRIC_PICKAXE = REGISTRY.register("electric_pickaxe", () -> new ElectricPickaxeItem());
 	public static final RegistryObject<Item> PROCESSED_URANIUM = REGISTRY.register("processed_uranium", () -> new ProcessedUraniumItem());
-	public static final RegistryObject<Item> BATTERY = REGISTRY.register("battery", () -> new BatteryItem());
 	public static final RegistryObject<Item> RUBBER = REGISTRY.register("rubber", () -> new RubberItem());
 	public static final RegistryObject<Item> PROTECT_ARMOR_HELMET = REGISTRY.register("protect_armor_helmet", () -> new ProtectArmorItem.Helmet());
 	public static final RegistryObject<Item> PROTECT_ARMOR_CHESTPLATE = REGISTRY.register("protect_armor_chestplate",
@@ -61,6 +60,7 @@ public class KtmodModItems {
 	public static final RegistryObject<Item> PROTECT_ARMOR_LEGGINGS = REGISTRY.register("protect_armor_leggings",
 			() -> new ProtectArmorItem.Leggings());
 	public static final RegistryObject<Item> PROTECT_ARMOR_BOOTS = REGISTRY.register("protect_armor_boots", () -> new ProtectArmorItem.Boots());
+	public static final RegistryObject<Item> BATTERY = REGISTRY.register("battery", () -> new BatteryItem());
 	public static final RegistryObject<Item> HYDRAULIC_PRESS = block(KtmodModBlocks.HYDRAULIC_PRESS, KtmodModTabs.TAB_TAB);
 	public static final RegistryObject<Item> IRON_PLATE = REGISTRY.register("iron_plate", () -> new IronPlateItem());
 	public static final RegistryObject<Item> BEDROCK_CRYSTAL_ARMOR_HELMET = REGISTRY.register("bedrock_crystal_armor_helmet",
