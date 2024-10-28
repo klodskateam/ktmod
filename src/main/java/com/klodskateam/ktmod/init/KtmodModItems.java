@@ -24,8 +24,12 @@ import com.klodskateam.ktmod.item.FuelItem;
 import com.klodskateam.ktmod.item.ElectricPickaxeItem;
 import com.klodskateam.ktmod.item.CrystalItem;
 import com.klodskateam.ktmod.item.CopperWireItem;
+import com.klodskateam.ktmod.item.CopperRadiatorItem;
+import com.klodskateam.ktmod.item.BedrockCrystalArmorItem;
+import com.klodskateam.ktmod.item.BedrockAlloyItem;
 import com.klodskateam.ktmod.item.BearingItem;
 import com.klodskateam.ktmod.item.BatteryItem;
+import com.klodskateam.ktmod.item.AdvancedMicrochipItem;
 import com.klodskateam.ktmod.KtmodMod;
 
 public class KtmodModItems {
@@ -59,6 +63,18 @@ public class KtmodModItems {
 	public static final RegistryObject<Item> PROTECT_ARMOR_BOOTS = REGISTRY.register("protect_armor_boots", () -> new ProtectArmorItem.Boots());
 	public static final RegistryObject<Item> HYDRAULIC_PRESS = block(KtmodModBlocks.HYDRAULIC_PRESS, KtmodModTabs.TAB_TAB);
 	public static final RegistryObject<Item> IRON_PLATE = REGISTRY.register("iron_plate", () -> new IronPlateItem());
+	public static final RegistryObject<Item> BEDROCK_CRYSTAL_ARMOR_HELMET = REGISTRY.register("bedrock_crystal_armor_helmet",
+			() -> new BedrockCrystalArmorItem.Helmet());
+	public static final RegistryObject<Item> BEDROCK_CRYSTAL_ARMOR_CHESTPLATE = REGISTRY.register("bedrock_crystal_armor_chestplate",
+			() -> new BedrockCrystalArmorItem.Chestplate());
+	public static final RegistryObject<Item> BEDROCK_CRYSTAL_ARMOR_LEGGINGS = REGISTRY.register("bedrock_crystal_armor_leggings",
+			() -> new BedrockCrystalArmorItem.Leggings());
+	public static final RegistryObject<Item> BEDROCK_CRYSTAL_ARMOR_BOOTS = REGISTRY.register("bedrock_crystal_armor_boots",
+			() -> new BedrockCrystalArmorItem.Boots());
+	public static final RegistryObject<Item> SMELTER = block(KtmodModBlocks.SMELTER, KtmodModTabs.TAB_TAB);
+	public static final RegistryObject<Item> BEDROCK_ALLOY = REGISTRY.register("bedrock_alloy", () -> new BedrockAlloyItem());
+	public static final RegistryObject<Item> COPPER_RADIATOR = REGISTRY.register("copper_radiator", () -> new CopperRadiatorItem());
+	public static final RegistryObject<Item> ADVANCED_MICROCHIP = REGISTRY.register("advanced_microchip", () -> new AdvancedMicrochipItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

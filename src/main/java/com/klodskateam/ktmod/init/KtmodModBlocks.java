@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Block;
 import com.klodskateam.ktmod.block.UranOreBlock;
 import com.klodskateam.ktmod.block.TankBlock;
 import com.klodskateam.ktmod.block.SolderingStationBlock;
+import com.klodskateam.ktmod.block.SmelterBlock;
 import com.klodskateam.ktmod.block.ProcessedBedrockBlock;
 import com.klodskateam.ktmod.block.OreProcessorBlock;
 import com.klodskateam.ktmod.block.OilOreBlock;
@@ -40,6 +41,7 @@ public class KtmodModBlocks {
 	public static final RegistryObject<Block> URAN_ORE = REGISTRY.register("uran_ore", () -> new UranOreBlock());
 	public static final RegistryObject<Block> ORE_PROCESSOR = REGISTRY.register("ore_processor", () -> new OreProcessorBlock());
 	public static final RegistryObject<Block> HYDRAULIC_PRESS = REGISTRY.register("hydraulic_press", () -> new HydraulicPressBlock());
+	public static final RegistryObject<Block> SMELTER = REGISTRY.register("smelter", () -> new SmelterBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

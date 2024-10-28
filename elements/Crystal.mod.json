@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "crystal",
     "customModelName": "Normal",
-    "name": "Crystal",
+    "name": "Bedrock Crystal",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Tab"

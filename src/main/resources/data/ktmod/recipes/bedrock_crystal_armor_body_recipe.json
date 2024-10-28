@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ktmod:crystal"
+    },
+    "2": {
+      "item": "ktmod:crystal"
+    },
+    "3": {
+      "item": "ktmod:crystal"
+    },
+    "4": {
+      "item": "ktmod:crystal"
+    },
+    "5": {
+      "item": "ktmod:crystal"
+    },
+    "6": {
+      "item": "ktmod:crystal"
+    },
+    "7": {
+      "item": "ktmod:crystal"
+    },
+    "8": {
+      "item": "ktmod:crystal"
+    }
+  },
+  "result": {
+    "item": "ktmod:bedrock_crystal_armor_chestplate",
+    "count": 1
+  }
+}

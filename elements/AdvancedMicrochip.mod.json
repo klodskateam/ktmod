@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "microchip_txture",
+    "texture": "advanced_microchip_texture",
     "customModelName": "Normal",
-    "name": "Regular Chip",
-    "rarity": "COMMON",
+    "name": "Advanced Microchip",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Tab"
     },

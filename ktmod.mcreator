@@ -610,6 +610,144 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ore_processor_gui"
+    },
+    {
+      "name": "BedrockCrystalArmor",
+      "type": "armor",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_crystal_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "BedrockCrystalArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_crystal_armor_helmet_recipe"
+    },
+    {
+      "name": "BedrockCrystalArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_crystal_armor_body_recipe"
+    },
+    {
+      "name": "BedrockCrystalArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_crystal_armor_leggings_recipe"
+    },
+    {
+      "name": "BedrockCrystalArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_crystal_armor_boots_recipe"
+    },
+    {
+      "name": "Smelter",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelter"
+    },
+    {
+      "name": "SmelterGUI",
+      "type": "gui",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelter_gui"
+    },
+    {
+      "name": "BedrockAlloy",
+      "type": "item",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bedrock_alloy"
+    },
+    {
+      "name": "SmelterObnovitTakt",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelter_obnovit_takt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CopperRadiator",
+      "type": "item",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_radiator"
+    },
+    {
+      "name": "CopperRadiatorCraft",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_radiator_craft"
+    },
+    {
+      "name": "SmelterCraft",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelter_craft"
+    },
+    {
+      "name": "SolderingStationCraft",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldering_station_craft"
+    },
+    {
+      "name": "AdvancedMicrochip",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_microchip"
     }
   ],
   "variable_elements": [],
@@ -621,8 +759,12 @@
       "item.ktmod.protect_armor_leggings": "Protective Leggings",
       "item.ktmod.fuel_bucket": "Ведро с топливом",
       "item.ktmod.bearing": "Bearing",
+      "item.ktmod.copper_radiator": "Copper Radiator",
       "item.ktmod.protect_armor_helmet": "Protective helmet",
       "item.ktmod.plastic": "Пластик",
+      "item.ktmod.bedrock_crystal_armor_helmet": "BedrockCrystal Helmet",
+      "item.ktmod.bedrock_alloy": "Bedrock Alloy",
+      "block.ktmod.smelter": "Smelter",
       "block.ktmod.fuel": "Топливо",
       "item.ktmod.electric_pickaxe": "Electric Pickaxe",
       "item.ktmod.crystal": "Кристалл",
@@ -636,8 +778,12 @@
       "fluid.ktmod.fuel": "Топливо",
       "item.ktmod.protect_armor_boots": "Protective boots",
       "block.ktmod.ore_processor": "Ore Processor",
+      "item.ktmod.bedrock_crystal_armor_leggings": "BedrockCrystal Leggings",
+      "item.ktmod.advanced_microchip": "Advanced Microchip",
+      "item.ktmod.bedrock_crystal_armor_boots": "BedrockCrystal Boots",
       "block.ktmod.processed_bedrock": "Обработанный бедрок",
       "block.ktmod.oil_ore": "Нефтяная руда",
+      "item.ktmod.bedrock_crystal_armor_chestplate": "BedrockCrystal Chestplate",
       "block.ktmod.distillation_column": "Distillation Column",
       "item.ktmod.battery": "Battery",
       "block.ktmod.bedrock_miner": "Обработчик бедрока",
@@ -652,11 +798,15 @@
       "item.ktmod.protect_armor_leggings": "Protective Leggings",
       "item.ktmod.fuel_bucket": "Fuel Bucket",
       "item.ktmod.bearing": "Bearing",
+      "item.ktmod.copper_radiator": "Copper Radiator",
       "item.ktmod.protect_armor_helmet": "Protective helmet",
       "item.ktmod.plastic": "Plastic",
+      "item.ktmod.bedrock_crystal_armor_helmet": "BedrockCrystal Helmet",
+      "item.ktmod.bedrock_alloy": "Bedrock Alloy",
+      "block.ktmod.smelter": "Smelter",
       "block.ktmod.fuel": "Fuel",
       "item.ktmod.electric_pickaxe": "Electric Pickaxe",
-      "item.ktmod.crystal": "Crystal",
+      "item.ktmod.crystal": "Bedrock Crystal",
       "item.ktmod.processed_uranium": "Processed Uranium",
       "item.ktmod.regular_chip": "Regular Chip",
       "item.ktmod.rubber": "Rubber",
@@ -667,8 +817,12 @@
       "fluid.ktmod.fuel": "Fuel",
       "item.ktmod.protect_armor_boots": "Protective boots",
       "block.ktmod.ore_processor": "Ore Processor",
+      "item.ktmod.bedrock_crystal_armor_leggings": "BedrockCrystal Leggings",
+      "item.ktmod.advanced_microchip": "Advanced Microchip",
+      "item.ktmod.bedrock_crystal_armor_boots": "BedrockCrystal Boots",
       "block.ktmod.processed_bedrock": "Processed Bedrock",
       "block.ktmod.oil_ore": "Oil Ore",
+      "item.ktmod.bedrock_crystal_armor_chestplate": "BedrockCrystal Chestplate",
       "block.ktmod.distillation_column": "Distillation Column",
       "item.ktmod.battery": "Battery",
       "block.ktmod.bedrock_miner": "Bedrock Miner",
