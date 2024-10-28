@@ -375,7 +375,7 @@
       "name": "OreProcessor",
       "type": "block",
       "sortid": 31,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ore_processor"
     },
@@ -443,7 +443,7 @@
       "name": "HydraulicPressGUI",
       "type": "gui",
       "sortid": 43,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "hydraulic_press_gui"
     },
@@ -551,7 +551,7 @@
       "name": "ElectricPickaxeGUI",
       "type": "gui",
       "sortid": 35,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "electric_pickaxe_gui"
     },
@@ -634,6 +634,7 @@
       "item.ktmod.regular_chip": "Базовый микрочип",
       "block.ktmod.uran_ore": "Урановая руда",
       "itemGroup.tabtab": "KTMod",
+      "block.ktmod.hydraulic_press": "Hydraulic Press",
       "block.ktmod.nether_oil_ore": "Нефтяная руда"
     },
     "en_us": {
