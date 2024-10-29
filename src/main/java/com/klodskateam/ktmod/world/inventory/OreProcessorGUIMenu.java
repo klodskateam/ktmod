@@ -75,17 +75,17 @@ public class OreProcessorGUIMenu extends AbstractContainerMenu implements Suppli
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 26) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 61, 35) {
+		}));
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
 		}));
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 26) {
+		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 16, 44) {
-		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 61, 35) {
-		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 35) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;

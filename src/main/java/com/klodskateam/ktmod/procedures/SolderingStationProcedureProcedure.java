@@ -360,7 +360,7 @@ public class SolderingStationProcedureProcedure {
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
 					if (_ent != null) {
 						final int _slotid = 6;
-						final ItemStack _setstack = new ItemStack(KtmodModItems.REGULAR_CHIP.get());
+						final ItemStack _setstack = new ItemStack(KtmodModItems.ADVANCED_MICROCHIP.get());
 						_setstack.setCount((int) (new Object() {
 							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 								AtomicInteger _retval = new AtomicInteger(0);

@@ -34,7 +34,9 @@
       }
     ],
     "name": "Soldering Station",
-    "specialInfo": [],
+    "specialInfo": [
+      "Epileptic texture!!!"
+    ],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
