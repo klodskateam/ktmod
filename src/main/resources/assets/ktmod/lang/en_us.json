@@ -14,7 +14,7 @@
   "item.ktmod.electric_pickaxe": "Electric Pickaxe",
   "item.ktmod.crystal": "Bedrock Crystal",
   "item.ktmod.processed_uranium": "Processed Uranium",
-  "item.ktmod.regular_chip": "Regular Chip",
+  "item.ktmod.regular_chip": "Regular Microchip",
   "item.ktmod.rubber": "Rubber",
   "block.ktmod.hydraulic_press": "Hydraulic Press",
   "block.ktmod.tank": "Tank",
@@ -32,8 +32,8 @@
   "block.ktmod.distillation_column": "Distillation Column",
   "item.ktmod.battery": "Battery",
   "block.ktmod.bedrock_miner": "Bedrock Miner",
-  "block.ktmod.uran_ore": "Uran Ore",
+  "block.ktmod.uran_oreii": "Uranium Ore",
   "itemGroup.tabtab": "KTMod",
   "block.ktmod.nether_oil_ore": "Oil Ore",
-  "item.ktmod.protect_armor_chestplate": "Protective chestplate"
+  "item.ktmod.protect_armor_chestplate": "Protective Chestplate"
 }
