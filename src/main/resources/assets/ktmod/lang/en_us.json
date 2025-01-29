@@ -33,8 +33,8 @@
   "block.ktmod.distillation_column": "Distillation Column",
   "item.ktmod.battery": "Battery",
   "block.ktmod.bedrock_miner": "Bedrock Miner",
-  "block.ktmod.uran_oreii": "Uranium Ore",
+  "block.ktmod.uran_ore": "Uran Ore",
   "itemGroup.tabtab": "KTMod",
   "block.ktmod.nether_oil_ore": "Oil Ore",
-  "item.ktmod.protect_armor_chestplate": "Protective Chestplate"
+  "item.ktmod.protect_armor_chestplate": "Protective chestplate"
 }
