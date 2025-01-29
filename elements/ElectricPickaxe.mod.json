@@ -5,16 +5,16 @@
     "renderType": 0,
     "texture": "electric_pickaxe_texture",
     "customModelName": "Normal",
-    "name": "Electric Pickaxe",
+    "name": "Electric Pickaxe (WIP)",
     "specialInfo": [
       "When you are lazy",
       "try making electricity your friend"
     ],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Tab"
     },
     "toolType": "Pickaxe",
-    "harvestLevel": 1,
+    "harvestLevel": 3,
     "efficiency": 10.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
@@ -22,18 +22,13 @@
     "usageCount": 100,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Battery"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "ElectricPickaxeMenu"
-    },
-    "onEntityHitWith": {
-      "name": "ElectricPickaxeBlockDestroyedWithTool"
-    },
-    "onBlockDestroyedWithTool": {
-      "name": "ElectricPickaxeBlockDestroyedWithTool"
-    }
+    "damageOnCrafting": false
   }
 }

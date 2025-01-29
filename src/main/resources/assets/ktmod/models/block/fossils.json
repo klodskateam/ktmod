@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ktmod:blocks/fossils",
+    "up": "ktmod:blocks/fossils",
+    "north": "ktmod:blocks/fossils",
+    "east": "ktmod:blocks/fossils",
+    "south": "ktmod:blocks/fossils",
+    "west": "ktmod:blocks/fossils",
+    "particle": "ktmod:blocks/fossils"
+  }
+}

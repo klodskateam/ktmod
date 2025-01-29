@@ -24,6 +24,7 @@ import com.klodskateam.ktmod.block.OilOreBlock;
 import com.klodskateam.ktmod.block.NetherOilOreBlock;
 import com.klodskateam.ktmod.block.HydraulicPressBlock;
 import com.klodskateam.ktmod.block.FuelBlock;
+import com.klodskateam.ktmod.block.FossilsBlock;
 import com.klodskateam.ktmod.block.DistillationColumnBlock;
 import com.klodskateam.ktmod.block.BedrockMinerBlock;
 import com.klodskateam.ktmod.KtmodMod;
@@ -42,6 +43,7 @@ public class KtmodModBlocks {
 	public static final RegistryObject<Block> ORE_PROCESSOR = REGISTRY.register("ore_processor", () -> new OreProcessorBlock());
 	public static final RegistryObject<Block> HYDRAULIC_PRESS = REGISTRY.register("hydraulic_press", () -> new HydraulicPressBlock());
 	public static final RegistryObject<Block> SMELTER = REGISTRY.register("smelter", () -> new SmelterBlock());
+	public static final RegistryObject<Block> FOSSILS = REGISTRY.register("fossils", () -> new FossilsBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -75,6 +75,7 @@ public class KtmodModItems {
 	public static final RegistryObject<Item> BEDROCK_ALLOY = REGISTRY.register("bedrock_alloy", () -> new BedrockAlloyItem());
 	public static final RegistryObject<Item> COPPER_RADIATOR = REGISTRY.register("copper_radiator", () -> new CopperRadiatorItem());
 	public static final RegistryObject<Item> ADVANCED_MICROCHIP = REGISTRY.register("advanced_microchip", () -> new AdvancedMicrochipItem());
+	public static final RegistryObject<Item> FOSSILS = block(KtmodModBlocks.FOSSILS, KtmodModTabs.TAB_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
